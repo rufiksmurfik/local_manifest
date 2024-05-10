@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="main" fetch="https://github.com/rufiksmurfik" />
-  <remote name="LOS" fetch="https://github.com/LineageOS" />
-
+  <!-- Remotes -->
+    <remote name="github"
+            fetch="https://github.com"
+            clone-depth="1" />
+            
   <!-- /* device specific */ -->
 
   <!-- device -->
@@ -22,5 +24,3 @@
 
   <!-- sepolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="https://github.com/xiaomi-mediatek-devs/android_device_mediatek_sepolicy_vndr " remote="main" revision="lineage-21" />
-
-</manifest>
